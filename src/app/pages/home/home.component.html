@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <h2>Welcome to this demo app</h2>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <app-clock></app-clock>
+
+    </div>
+    <div class="col-sm-6">
+      <h4>Calcola le potenze di 2:</h4>
+      <app-numeric-input [label]="'Esponente'" (pow)="updateValue($event)"></app-numeric-input>
+      {{ computedValue }}
+    </div>
+  </div>
+</div>

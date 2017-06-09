@@ -1,0 +1,22 @@
+<div class="jumbotron">
+    <h2>Ecco tutti i telefoni:</h2>
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Company Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let phone of phones">
+                <td>{{ phone.Id }}</td>
+                <td><a [routerLink]="['/detail/' + phone.Id]">{{ phone.Name }}</a></td>
+                <td>{{ phone.Company.Name }}</td>
+                <td>{{ phone.Price + ' Euro' }}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
