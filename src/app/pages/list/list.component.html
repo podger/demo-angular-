@@ -12,7 +12,7 @@
         <tbody>
             <tr *ngFor="let phone of phones">
                 <td>{{ phone.Id }}</td>
-                <td><a [routerLink]="['/detail/' + phone.Id]">{{ phone.Name }}</a></td>
+                <td><a>{{ phone.Name }}</a></td>
                 <td>{{ phone.Company.Name }}</td>
                 <td>{{ phone.Price + ' Euro' }}</td>
             </tr>
